@@ -1,0 +1,100 @@
+main {
+  background: aqua;
+}
+
+article{
+  padding: 10px;
+  margin: 10px;
+  width: 66%;
+
+}
+
+.container
+{
+  background-color:blue;
+
+}
+
+
+.card-header:not(.collapsed) {
+  background:goldenrod;
+}
+
+aside{
+  padding: 10px;
+  margin: 10px;
+  width: 44%;
+
+}
+
+header {
+    
+    background-color: coral;
+  }
+
+
+
+nav{
+
+    background-color: green;
+    list-style-type: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    width: 33%;
+}
+
+article {
+    background-color: DodgerBlue;
+  }
+
+  aside{
+    background-color: Red;
+  }
+
+  footer{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul, nav li{
+    margin: 0;
+    padding: 0;
+
+  }
+
+  html, body{
+      margin: 0;
+  }
+
+  h1{
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+  }
+
+
+  a{
+
+    color: black
+  }
+
+a:hover{
+    color: red;
+    
+
+}
+
+a: nav li{
+    background-color: blue;
+    width: 100%;
+    display: none;
+
+}
+
+
+
