@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>P</title>
+   <script type="text/javascript">
+
+   function oblicz() {
+     var t1 = document.getElementById("a").value;
+     var t2 = document.getElementById("b").value;
+       
+     var dodawanie = parseFloat(t1) + parseFloat(t2);
+     var odejmowanie = parseFloat(t1) - parseFloat(t2);
+     var mnozenie = parseFloat(t1) * parseFloat(t2);
+
+     document.getElementById('result1').value = 'dodawanie = ' + dodawanie;
+     document.getElementById('result2').value = 'odejmowanie = ' + odejmowanie;
+     document.getElementById('result3').value = 'mnozenie = ' + mnozenie;
+
+    if(t2 == '0')
+    {
+        document.getElementById('result4').value = 'Nie można dzielić przez 0';
+    }
+    else
+    {
+        var dzielenie = parseFloat(t1) / parseFloat(t2);
+        document.getElementById('result4').value = 'dzielenie = ' + dzielenie;
+    }
+   }
+
+   </script> 
+ </head> 
+ <body> 
+    <form>
+        <input type="text" id="a" name="a"><br><br>
+        <input type="text" id="b" name="b"><br><br>
+        <button type="button" onclick="oblicz()">Oblicz</button><br><br>
+        <input type="text" id="result1" disabled="disabled"><br><br>
+        <input type="text" id="result2" disabled="disabled"><br><br>
+        <input type="text" id="result3" disabled="disabled"><br><br>
+        <input type="text" id="result4" disabled="disabled"><br><br>
+      </form>
+ </body> 
+ </html>
+
